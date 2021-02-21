@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Liar's Dice Rules
+There are many names for this popular dice game, such as Doubting Dice, Dudo, Perudo, Mexacali, Call My Bluff, "pirate's dice," "deception dice," and so on.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+But regardless of the name, Liar's Dice requires two or more players and is typically played with a set of five  6-sided dice for each player.
 
-## Available Scripts
+Since players must keep their dice concealed from other players, one  dice cup for each player is recommended.
+---
 
-In the project directory, you can run:
+## How to play Liar's Dice
+There are two ways to play Liar's Dice. In one, each player has five standard 6-sided dice, and in the second, all players share a single "hand" of five dice that is passed around the table. We'll describe each version and a few variants for each.
 
-### `npm start`
+### "Single Hand" Liar's Dice
+The game is played over multiple rounds. The first player for the first round is determined by mutual agreement or by all players rolling two dice with the highest roller becoming the first player. Play then proceeds clockwise around the table.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To begin each round, all players roll their dice simultaneously. Each player looks at their own dice after they roll, keeping them hidden from the other players. (If any dice has landed on top of another, the player must roll all their dice again.)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The first player then states a bid consisting of a face ("1's", "5's", etc.) and a quantity. The quantity represents the player's guess as to how many of each face have been rolled by all the players at the table, including themselves. For example, a player might bid "five 2's."
 
-### `npm test`
+Each subsequent player can either then make a higher bid of the same face (e.g., "six 2's"), or they can challenge the previous bid. (Note that there are a large variety of bidding variations that can be used. We'll describe some of them below.)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+If the player challenges the previous bid, all players reveal their dice. If the bid is matched or exceeded, the bidder wins. Otherwise the challenger wins.
 
-### `npm run build`
+If the bidder loses, they remove one of their dice from the game by placing it in front of their dice cup.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The loser of the previous round begins the next round.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+(In the event that the game comes down to two players with only a single dice each, bids are then made on the sum of both dice instead the quantity of faces rolled.)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Example of play:
 
-### `npm run eject`
+Bob, Lauren, Steve and John are playing a game of Liar's Dice. Bob is the first player. After they have all rolled and looked at their own dice, Bob begins by bidding "three 4's."
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Play passes to Lauren, who makes a higher bid of "five 4's."
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Play passes to Steve who bids "seven 4's."
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Play passes to John, who challenges Steve's bid. Because the bid has been challenged, all players lift their dice cups to reveal their dice. There are six 4's showing, so John wins because Steve's bid was not matched or exceeded. Steve would have won if there had been seven or more 4's showing.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Because he lost the round, Steve takes one of his five dice and places it in front of his dice cup. It will not be used for the remainder of the game.
